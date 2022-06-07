@@ -58,7 +58,9 @@ jinja2==3.0.1
 josepy==1.10.0
     # via jupyterhub-ltiauthenticator
 jsonschema==3.2.0
-    # via jupyter-telemetry
+    # via
+    #   jupyter-telemetry
+    #   oauthenticator
 jupyter-telemetry==0.1.0
     # via jupyterhub
 jupyterhub==2.0.2
@@ -103,7 +105,7 @@ mwoauth==0.3.7
     # via -r requirements.in
 nullauthenticator==1.0.0
     # via -r requirements.in
-oauthenticator==14.2.0
+oauthenticator==15.0.0
     # via
     #   -r requirements.in
     #   jupyterhub-ltiauthenticator
@@ -177,6 +179,7 @@ requests==2.26.0
     #   jupyterhub
     #   kubernetes
     #   mwoauth
+    #   oauthenticator
     #   pyjwkest
     #   requests-oauthlib
 requests-oauthlib==1.3.0
@@ -185,8 +188,10 @@ requests-oauthlib==1.3.0
     #   mwoauth
 rsa==4.7.2
     # via google-auth
-ruamel.yaml==0.17.16
-    # via jupyter-telemetry
+ruamel-yaml==0.17.16
+    # via
+    #   jupyter-telemetry
+    #   oauthenticator
 six==1.16.0
     # via
     #   bcrypt
