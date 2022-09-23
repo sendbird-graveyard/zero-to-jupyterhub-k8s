@@ -87,7 +87,7 @@ jupyterhub-nativeauthenticator==1.0.5
     # via -r requirements.in
 jupyterhub-tmpauthenticator==0.6
     # via -r requirements.in
-jwcrypto==1.0
+jwcrypto==1.4
     # via jupyterhub-ltiauthenticator
 kubernetes==18.20.0
     # via jupyterhub-kubespawner
