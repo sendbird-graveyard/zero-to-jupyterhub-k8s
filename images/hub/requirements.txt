@@ -31,20 +31,11 @@ cffi==1.14.6
 charset-normalizer==2.0.6
     # via requests
 cryptography==3.4.8
-    # via
-    #   josepy
-    #   jwcrypto
-    #   pyopenssl
-deprecated==1.2.13
-    # via jwcrypto
+    # via pyopenssl
 entrypoints==0.3
     # via jupyterhub
 escapism==1.0.1
-    # via
-    #   jupyterhub-kubespawner
-    #   jupyterhub-ltiauthenticator
-future==0.18.2
-    # via pyjwkest
+    # via jupyterhub-kubespawner
 google-auth==2.1.0
     # via kubernetes
 greenlet==1.1.1
@@ -55,8 +46,6 @@ jinja2==3.0.1
     # via
     #   jupyterhub
     #   jupyterhub-kubespawner
-josepy==1.10.0
-    # via jupyterhub-ltiauthenticator
 jsonschema==3.2.0
     # via jupyter-telemetry
 jupyter-telemetry==0.1.0
@@ -81,14 +70,12 @@ jupyterhub-kubespawner==2.0.0
     # via -r requirements.in
 jupyterhub-ldapauthenticator==1.3.2
     # via -r requirements.in
-jupyterhub-ltiauthenticator==1.3.0
+jupyterhub-ltiauthenticator==1.4.0
     # via -r requirements.in
 jupyterhub-nativeauthenticator==1.0.5
     # via -r requirements.in
 jupyterhub-tmpauthenticator==0.6
     # via -r requirements.in
-jwcrypto==1.0
-    # via jupyterhub-ltiauthenticator
 kubernetes==18.20.0
     # via jupyterhub-kubespawner
 ldap3==2.9.1
@@ -104,9 +91,7 @@ mwoauth==0.3.7
 nullauthenticator==1.0.0
     # via -r requirements.in
 oauthenticator==14.2.0
-    # via
-    #   -r requirements.in
-    #   jupyterhub-ltiauthenticator
+    # via -r requirements.in
 oauthlib==3.1.1
     # via
     #   jupyterhub
@@ -119,8 +104,6 @@ packaging==21.0
     # via jupyterhub
 pamela==1.0.0
     # via jupyterhub
-pem==21.2.0
-    # via jupyterhub-ltiauthenticator
 prometheus-client==0.11.0
     # via jupyterhub
 psycopg2-binary==2.9.3
@@ -136,25 +119,16 @@ pyasn1-modules==0.2.8
     # via google-auth
 pycparser==2.20
     # via cffi
-pycryptodome==3.11.0
-    # via jupyterhub-ltiauthenticator
-pycryptodomex==3.11.0
-    # via pyjwkest
 pycurl==7.44.1
     # via -r requirements.in
-pyjwkest==1.4.2
-    # via jupyterhub-ltiauthenticator
 pyjwt==1.7.1
     # via
     #   -r requirements.in
-    #   jupyterhub-ltiauthenticator
     #   mwoauth
 pymysql==1.0.2
     # via -r requirements.in
 pyopenssl==20.0.1
-    # via
-    #   certipy
-    #   josepy
+    # via certipy
 pyparsing==2.4.7
     # via packaging
 pyrsistent==0.18.0
@@ -177,7 +151,6 @@ requests==2.26.0
     #   jupyterhub
     #   kubernetes
     #   mwoauth
-    #   pyjwkest
     #   requests-oauthlib
 requests-oauthlib==1.3.0
     # via
@@ -185,7 +158,7 @@ requests-oauthlib==1.3.0
     #   mwoauth
 rsa==4.7.2
     # via google-auth
-ruamel.yaml==0.17.16
+ruamel-yaml==0.17.16
     # via jupyter-telemetry
 six==1.16.0
     # via
@@ -194,7 +167,6 @@ six==1.16.0
     #   kubernetes
     #   mwoauth
     #   onetimepass
-    #   pyjwkest
     #   pyopenssl
     #   python-dateutil
 sqlalchemy==1.4.23
@@ -225,8 +197,6 @@ urllib3==1.26.6
     #   requests
 websocket-client==1.2.1
     # via kubernetes
-wrapt==1.13.3
-    # via deprecated
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
